@@ -4,9 +4,12 @@
 var SETS = {
 	base: 0,
 	breakinAtmo: 1,
-	piratesAndBountyHunters: 2,
-	blueSun: 3,
-	promo: 4
+	promo: 2,
+	piratesAndBountyHunters: 3,
+	blueSun: 4,
+	kalidasa: 5,
+	esmerelda: 6,
+	jetwash: 7
 };
 
 /* Card types */
@@ -24,7 +27,8 @@ var SHOPS = {
 	regina: 22,
 	silverhold: 23,
 	spaceBazaar: 24,
-	meridian: 25
+	meridian: 25,
+	beaumonde: 26
 };
 
 /* Keywords */
@@ -48,7 +52,8 @@ var PROFESSIONS = {
 	merc: 45,
 	pilot: 46,
 	soldier: 47,
-	lawman: 48
+	lawman: 48,
+	mudder: 49
 };
 
 
@@ -2005,7 +2010,7 @@ var cards = [
 
 	"title":		"",
 
-	"description":	"Requires Pilot to use.\nCounts as TRANSPORT.\nAfter completing a Crime Job, Load 1 Contraband.",
+	"description":	"Requires Pilot to use.\nCounts as [TRANSPORT].\nAfter completing a Crime Job, Load 1 Contraband.",
 
 	"flavourText":	""
 },
@@ -5531,6 +5536,1448 @@ var cards = [
 	"description":	"1 Fuel to initiate Full Burn.\nWhenever a Reaver or Alliance Ship enters your current Sector, you may immediately roll a Dice:\n1-2: No effect.\n3-6: Evade.",
 
 	"flavourText":	""
+},
+
+/*** KALIDASA CARDS ***/
+
+/** Osiris (Kalidasa) **/
+
+{
+	"id":			208,
+
+	"name":			"Med Foam",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.osiris,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to count as having made a successful Medic Check.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			209,
+
+	"name":			"Med Foam",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.osiris,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to count as having made a successful Medic Check.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			210,
+
+	"name":			"Nav Charts: Alliance Space",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.osiris,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to look at the top 5 Cards of the Alliance Space Nav Deck. Return the cards to the top of the Deck in any order.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			211,
+
+	"name":			"Nav Charts: Alliance Space",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.osiris,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to look at the top 5 Cards of the Alliance Space Nav Deck. Return the cards to the top of the Deck in any order.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			212,
+
+	"name":			"Yolanda's Pistol",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.osiris,
+	"cost":			400,
+
+	"fight":		1,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[KEYWORDS.firearm],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to re-roll a [Fight Test]",
+
+	"flavourText":	""
+},
+
+/** Persephone (Kalidasa) **/
+
+{
+	"id":			213,
+
+	"name":			"Hydraulic Docking Clamps",
+
+	"type":			TYPES.shipUpgrade,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.persephone,
+	"cost":			600,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Crime Jobs also count as Salvage Ops.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			214,
+
+	"name":			"Mudder",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.persephone,
+	"cost":			100,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[PROFESSIONS.mudder],
+
+	"moral":		false,
+	"wanted":		true,
+
+	"title":		"Indentured",
+
+	"description":	"Remove from Play at Harvest, Red Sun to take $500. This counts as Immoral.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			215,
+
+	"name":			"Mudder",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.persephone,
+	"cost":			100,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[PROFESSIONS.mudder],
+
+	"moral":		false,
+	"wanted":		true,
+
+	"title":		"Indentured",
+
+	"description":	"Remove from Play at Harvest, Red Sun to take $500. This counts as Immoral.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			216,
+
+	"name":			"Nav Charts: Rim Space",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.persephone,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to look at the top 5 Cards of the Rim Space Nav Deck. Return the cards to the top of the Deck in any order.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			217,
+
+	"name":			"Nav Charts: Rim Space",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.persephone,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to look at the top 5 Cards of the Rim Space Nav Deck. Return the cards to the top of the Deck in any order.",
+
+	"flavourText":	""
+},
+
+/** Regina (Kalidasa) **/
+
+{
+	"id":			218,
+
+	"name":			"Border Space Nav Charts",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.regina,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to look at the top 5 cards of the Border Space Nav Deck. Return the cards to the top of the Deck in any order.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			219,
+
+	"name":			"Border Space Nav Charts",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.regina,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to look at the top 5 cards of the Border Space Nav Deck. Return the cards to the top of the Deck in any order.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			220,
+
+	"name":			"Emissions Recycler",
+
+	"type":			TYPES.shipUpgrade,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.regina,
+	"cost":			800,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+	
+	"title":		"",
+
+	"description":	"+1 to Full Burn Range.\nIf you draw 2 'Big Black' Nav Cards in a row while Full Burning, you may take 1 Fuel. Limit once per Fly Action.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			221,
+
+	"name":			"Mudder",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.regina,
+	"cost":			100,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[PROFESSIONS.mudder],
+
+	"moral":		false,
+	"wanted":		true,
+
+	"title":		"Indentured",
+
+	"description":	"Remove from Play at Harvest, Red Sun to take $500. This counts as Immoral.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			222,
+
+	"name":			"Mudder",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.regina,
+	"cost":			100,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[PROFESSIONS.mudder],
+
+	"moral":		false,
+	"wanted":		true,
+
+	"title":		"Indentured",
+
+	"description":	"Remove from Play at Harvest, Red Sun to take $500. This counts as Immoral.",
+
+	"flavourText":	""
+},
+
+/** Silverhold (Kalidasa) **/
+
+{
+	"id":			223,
+
+	"name":			"Barkeep",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.silverhold,
+	"cost":			200,
+
+	"fight":		1,
+	"tech":			0,
+	"negotiate":	1,
+
+	"keywords":		[],
+
+	"professions":	[PROFESSIONS.mudder],
+
+	"moral":		false,
+	"wanted":		true,
+
+	"title":		"Good Times",
+
+	"description":	"Giving your Crew Shore Leave at Supply Planets is free.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			224,
+
+	"name":			"Extra Ammo Clips",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.silverhold,
+	"cost":			200,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to re-roll a [Fight Test].",
+
+	"flavourText":	""
+},
+
+{
+	"id":			225,
+
+	"name":			"Extra Ammo Clips",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.silverhold,
+	"cost":			200,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to re-roll a [Fight Test].",
+
+	"flavourText":	""
+},
+
+{
+	"id":			226,
+
+	"name":			"Mudder",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.silverhold,
+	"cost":			100,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[PROFESSIONS.mudder],
+
+	"moral":		false,
+	"wanted":		true,
+
+	"title":		"Indentured",
+
+	"description":	"Remove from Play at Harvest, Red Sun to take $500. This counts as Immoral.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			227,
+
+	"name":			"Mudder",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.silverhold,
+	"cost":			100,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[PROFESSIONS.mudder],
+
+	"moral":		false,
+	"wanted":		true,
+
+	"title":		"Indentured",
+
+	"description":	"Remove from Play at Harvest, Red Sun to take $500. This counts as Immoral.",
+
+	"flavourText":	""
+},
+
+/** Space Bazaar (Kalidasa) **/
+
+{
+	"id":			228,
+
+	"name":			"Emissions Recycler",
+
+	"type":			TYPES.shipUpgrade,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.spaceBazaar,
+	"cost":			800,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"+1 to Full Burn Range.\nIf you draw 2 'Big Black' Nav Cards in a row while Full Burning, you may take 1 Fuel. Limit once per Fly Action.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			229,
+
+	"name":			"Nav Charts: Alliance Space",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.spaceBazaar,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to look at the top 5 cards of the Alliance Space Nav Deck. Return the cards to the top of the Deck in any order.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			230,
+
+	"name":			"Nav Charts: Border Space",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.spaceBazaar,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to look at the top 5 cards of the Border Space Nav Deck. Return the cards to the top of the Deck in any order.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			231,
+
+	"name":			"Nav Charts: Rim Space",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.spaceBazaar,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to look at the top 5 cards of the Rim Space Nav Deck. Return the cards to the top of the Deck in any order.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			232,
+
+	"name":			"Wash's Hawaiian Shirt",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.spaceBazaar,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	1,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to reshuffle any 1 Nav Deck.",
+
+	"flavourText":	""
+},
+
+/** Beaumonde (Kalidasa) **/
+
+{
+	"id":			233,
+
+	"name":			"Barkeep",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			200,
+
+	"fight":		1,
+	"tech":			0,
+	"negotiate":	1,
+
+	"keywords":		[],
+
+	"professions":	[PROFESSIONS.grifter],
+
+	"moral":		false,
+	"wanted":		true,
+
+	"title":		"Good Times",
+
+	"description":	"Giving your Crew Shore Leave at Supply Planets is free.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			234,
+
+	"name":			"Billiards Betting",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			500,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"[GAMBLING]\nWhen you Buy this card, roll two dice. Take $100 times the total of the dice and discard this card.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			235,
+
+	"name":			"Board Game Collection",
+
+	"type":			TYPES.shipUpgrade,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			200,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"You may use a Buy Action to give your Crew Shore Leave in any Sector.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			236,
+
+	"name":			"Busker",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			200,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	1,
+
+	"keywords":		[],
+
+	"professions":	[PROFESSIONS.grifter, PROFESSIONS.mudder],
+
+	"moral":		false,
+	"wanted":		true,
+
+	"title":		"Work the Crowd",
+
+	"description":	"When you Make-Work, take an extra $100.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			237,
+
+	"name":			"Emissions Recycler",
+
+	"type":			TYPES.shipUpgrade,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			800,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"+1 to Full Burn Range.\nIf you draw 2 \"Big Black\" Nav Cards in a row while Full Burning, you may take 1 Fuel. Limit once per Fly Action.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			238,
+
+	"name":			"Extra Ammo Clips",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			200,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to re-roll a [Fight Test].",
+
+	"flavourText":	""
+},
+
+{
+	"id":			239,
+
+	"name":			"Fan Dancer",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	2,
+
+	"keywords":		[],
+
+	"professions":	[PROFESSIONS.grifter],
+
+	"moral":		false,
+	"wanted":		false,
+	
+	"title":		"Mesmerize",
+
+	"description":	"Discard to ignore a Warrant Issued.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			240,
+
+	"name":			"Fess",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			2,
+	"negotiate":	0,
+
+	"keywords":		[KEYWORDS.hackingRig],
+
+	"professions":	[],
+
+	"moral":		false,
+	"wanted":		false,
+
+	"title":		"Phone Home",
+
+	"description":	"From any location, you may use a Deal Action to Deal with Higgins. Accept or discard the Jobs normally.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			241,
+
+	"name":			"Foreman",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			200,
+
+	"fight":		1,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[PROFESSIONS.mechanic, PROFESSIONS.mudder],
+
+	"moral":		false,
+	"wanted":		false,
+
+	"title":		"Mudder Manager",
+
+	"description":	"+2[Fight] when you have at least 3 Mudders in your crew.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			242,
+
+	"name":			"Grimey",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			0,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	1,
+
+	"keywords":		[],
+
+	"professions":	[PROFESSIONS.mudder],
+
+	"moral":		false,
+	"wanted":		false,
+	
+	"title":		"Errand Boy",
+
+	"description":	"When you discard a Gear Card, roll a die. If you roll a 6, keep the Gear Card. Otherwise, discard it normally.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			243,
+
+	"name":			"Holder",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			200,
+
+	"fight":		1,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[PROFESSIONS.pilot],
+
+	"moral":		false,
+	"wanted":		true,
+	
+	"title":		"Shanghai",
+
+	"description":	"When you Make-Work, you may also take a Fugitive Token.",
+
+	"flavourText":	"\"Stronger locks, thicker doors, keep everybody where they're s'posed to be.\" --Wright"
+},
+
+{
+	"id":			244,
+
+	"name":			"Hydraulic Docking Clamps",
+
+	"type":			TYPES.shipUpgrade,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			600,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Crime Jobs also count as Salvage Ops.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			245,
+
+	"name":			"Inara's Bow",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			500,
+
+	"fight":		2,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"When carried by a Companion, re-roll 1s in all [Fight Tests].",
+
+	"flavourText":	""
+},
+
+{
+	"id":			246,
+
+	"name":			"Inara's Guild Papers",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			1000,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	2,
+
+	"keywords":		[],
+
+	"professions":	[PROFESSIONS.companion],
+
+	"title":		"",
+
+	"description":	"Counts as [Companion].",
+
+	"flavourText":	""
+},
+
+{
+	"id":			247,
+
+	"name":			"Jayne's Holdout Pistol",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			500,
+
+	"fight":		1,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[KEYWORDS.firearm],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"May be used in [Kosherized] fights. Does not count towards Gear Limit.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			248,
+
+	"name":			"Labor Contract: Persephone",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			500,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"From any location, you may use a Buy Action to Hire 1 Crew from the Persephone Discard Pile for free.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			249,
+
+	"name":			"Labor Contract: Regina",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			500,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"From any location, you may use a Buy Action to Hire 1 Crew from the Regina Discard Pile for free.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			250,
+
+	"name":			"Labor Contract: Silverhold",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			500,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"From any location, you may use a Buy Action to Hire 1 Crew from the Silverhold Discard Pile for free.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			251,
+
+	"name":			"Labor Contract: Space Bazaar",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			500,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"From any location, you may use a Buy Action to Hire 1 Crew from the Space Bazaar Discard Pile for free.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			252,
+
+	"name":			"Mal's Sniper Rifle",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			800,
+
+	"fight":		1,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[KEYWORDS.firearm, KEYWORDS.sniperRifle],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Before each [Fight Test], remove Disgruntled from the Owner.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			253,
+
+	"name":			"Med Foam",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to count as having made a successful Medic Check.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			254,
+
+	"name":			"Roberta",
+
+	"type":			TYPES.crew,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			300,
+
+	"fight":		1,
+	"tech":			0,
+	"negotiate":	2,
+
+	"keywords":		[KEYWORDS.fakeID],
+
+	"professions":	[PROFESSIONS.companion],
+
+	"moral":		false,
+	"wanted":		false,
+
+	"title":		"Make Nice",
+
+	"description":	"You may discard Roberta instead of losing Solid Rep with a Contact.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			255,
+
+	"name":			"Wash's Nav Charts",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			300,
+
+	"fight":		0,
+	"tech":			1,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard to look at the top 5 cards of ANY Nav Deck. Return the cards to the top of the Deck in any order.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			256,
+
+	"name":			"Zoe's Flak Jacket",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			200,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"If the Crew carrying this is Killed, discard this card instead.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			257,
+
+	"name":			"Zoe's Mare's Leg Rifle",
+
+	"type":			TYPES.gear,
+	"set":			SETS.kalidasa,
+	"shop":			SHOPS.beaumonde,
+	"cost":			800,
+
+	"fight":		1,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[KEYWORDS.firearm],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"When making a [Fight Test], roll two dice and use the highest.",
+
+	"flavourText":	""
+},
+
+/*** ESMERELDA CARDS ***/
+
+/** Persephone (Esmerelda) **/
+
+{
+	"id":			258,
+
+	"name":			"Caravan Pods",
+
+	"type":			TYPES.shipUpgrade,
+	"set":			SETS.esmerelda,
+	"shop":			SHOPS.persephone,
+	"cost":			400,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"2 Additional Cargo Hold areas. May only hold Passengers/Fugitives.\n+1 to Ship's Max Crew.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			259,
+
+	"name":			"Caravan Pods",
+
+	"type":			TYPES.shipUpgrade,
+	"set":			SETS.esmerelda,
+	"shop":			SHOPS.persephone,
+	"cost":			400,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"2 Additional Cargo Hold areas. May only hold Passengers/Fugitives.\n+1 to Ship's Max Crew.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			260,
+
+	"name":			"Full Mess Deck",
+
+	"type":			TYPES.shipUpgrade,
+	"set":			SETS.esmerelda,
+	"shop":			SHOPS.persephone,
+	"cost":			400,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"During your Fly Action you may discard a Cargo or Contraband to remove Disgruntled from all your Crew.",
+
+	"flavourText":	""
+},
+
+/*** JETWASH CARDS ***/
+
+/** Space Bazaar (Jetwash) **/
+
+{
+	"id":			261,
+
+	"name":			"Decoy Nav Sat Cluster",
+
+	"type":			TYPES.shipUpgrade,
+	"set":			SETS.jetwash,
+	"shop":			SHOPS.spaceBazaar,
+	"cost":			400,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard at the start of a Move Action to treat all Nav Cards that would normally move a Reaver or Alliance Ship as a \"Big Black\" card instead.",
+
+	"flavourText":	""
+},
+
+{
+	"id":			262,
+
+	"name":			"Xunsu Emergency Ram Jets",
+
+	"type":			TYPES.shipUpgrade,
+	"set":			SETS.jetwash,
+	"shop":			SHOPS.spaceBazaar,
+	"cost":			600,
+
+	"fight":		0,
+	"tech":			0,
+	"negotiate":	0,
+
+	"keywords":		[],
+
+	"professions":	[],
+
+	"title":		"",
+
+	"description":	"Discard and use an Action to initiate a Full Burn.\nMay be used in addition to a standard Move Action.",
+
+	"flavourText":	""
 }
 ];
 
@@ -5544,8 +6991,8 @@ var cards = [
 	"name":			"",
 
 	"type":			TYPES.,
-	"set":			SETS.blueSun,
-	"shop":			SHOPS.meridian,
+	"set":			SETS.,
+	"shop":			SHOPS.,
 	"cost":			,
 
 	"fight":		0,
