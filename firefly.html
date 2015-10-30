@@ -1,26 +1,172 @@
 <html>
 <body>
-<pre>
+<table border="1">
+    <tr>
+        <td>Sets:</td>
+        <td>
+            <input type="checkbox" name="sets" value="0" id="sets-base" checked="checked" disabled="disabled">
+            <label for="sets-base"> Base set</label>
+            <br>
+            <input type="checkbox" name="sets" value="1" id="sets-breakin-atmo">
+            <label for="sets-breakin-atmo"> Breakin' Atmo</label>
+            <br>
+            <input type="checkbox" name="sets" value="2" id="sets-promo">
+            <label for="sets-promo"> Promo cards</label>
+            <br>
+            <input type="checkbox" name="sets" value="3" id="sets-pirates-and-bounty-hunters">
+            <label for="sets-pirates-and-bounty-hunters">Pirates &amp; Bounty Hunters</label>
+            <br>
+            <input type="checkbox" name="sets" value="4" id="sets-blue-sun">
+            <label for="sets-blue-sun">Blue Sun</label>
+            <br>
+            <input type="checkbox" name="sets" value="5" id="sets-kalidasa">
+            <label for="sets-kalidasa">Kalidasa</label>
+            <br>
+            <input type="checkbox" name="sets" value="6" id="sets-esmerelda">
+            <label for="sets-esmerelda">Esmerelda</label>
+            <br>
+            <input type="checkbox" name="sets" value="7" id="sets-jetwash">
+            <label for="sets-jetwash">Jetwash</label>
+            <br>
+        </td>
+    </tr>
+    <tr>
+        <td>Type:</td>
+        <td>
+            <select id="type-dropdown">
+                <option value="none"></option>
+                <option value="10">Crew</option>
+                <option value="11">Gear</option>
+                <option value="12">Ship Upgrade</option>
+                <option value="13">Drive Core</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Keyword:</td>
+        <td>
+            <select id="keyword-dropdown">
+                <option value="none"></option>
+                <option value="30">Explosives</option>
+                <option value="31">Fake ID</option>
+                <option value="32">Fancy Duds</option>
+                <option value="33">Firearm</option>
+                <option value="34">Hacking Rig</option>
+                <option value="35">Sniper Rifle</option>
+                <option value="36">Transport</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Profession:</td>
+        <td>
+            <select id="profession-dropdown">
+                <option value="none"></option>
+                <option value="40">Companion</option>
+                <option value="41">Grifter</option>
+                <option value="42">Hill Folk</option>
+                <option value="43">Mechanic</option>
+                <option value="44">Medic</option>
+                <option value="45">Merc</option>
+                <option value="46">Pilot</option>
+                <option value="47">Soldier</option>
+                <option value="48">Lawman</option>
+                <option value="49">Mudder</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Cost:</td>
+        <td>
+            <input type="text" maxlength="4" size="4" id="cost-textbox"> or less</td>
+    </tr>
+    <tr>
+        <td>Fight:</td>
+        <td>
+            <input type="text" maxlength="1" size="1" id="fight-textbox"> or more</td>
+    </tr>
+    <tr>
+        <td>Tech:</td>
+        <td>
+            <input type="text" maxlength="1" size="1" id="tech-textbox"> or more</td>
+    </tr>
+    <tr>
+        <td>Negotiate:</td>
+        <td>
+            <input type="text" maxlength="1" size="1" id="negotiate-textbox"> or more</td>
+    </tr>
+    <tr>
+        <td>Moral:</td>
+        <td>
+            <select id="moral-dropdown">
+                <option value="none"></option>
+                <option value="true">Is Moral</option>
+                <option value="false">Is Not Moral</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Wanted:</td>
+        <td>
+            <select id="wanted-dropdown">
+                <option value="none"></option>
+                <option value="true">Is Wanted</option>
+                <option value="false">Is Not Wanted</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Name:</td>
+        <td>contains
+            <input type="text" id="name-textbox">
+        </td>
+    </tr>
+    <tr>
+        <td>Description:</td>
+        <td>contains
+            <input type="text" id="description-textbox">
+        </td>
+    </tr>
+</table>
+<br>
+<br>
+<button type="button" id="submit">Submit</button>
+<br>
+<br>
+<br>
+<br>
+<table border="0">
+    <tr>
+        <td>Osiris:</td>
+        <td id="results-20">0</td>
+    </tr>
+    <tr>
+        <td>Persephone:</td>
+        <td id="results-21">0</td>
+    </tr>
+    <tr>
+        <td>Regina:</td>
+        <td id="results-22">0</td>
+    </tr>
+    <tr>
+        <td>Silverhold:</td>
+        <td id="results-23">0</td>
+    </tr>
+    <tr>
+        <td>Space Bazaar:</td>
+        <td id="results-24">0</td>
+    </tr>
+    <tr>
+        <td>Meridian:</td>
+        <td id="results-25">0</td>
+    </tr>
+    <tr>
+        <td>Beaumonde:</td>
+        <td id="results-26">0</td>
+    </tr>
+</table>
 <script src="underscore.js"></script>
 <script src="cards.js"></script>
-<script src="functions.js"></script>
-</pre>
-<table>
-	<tr>
-		<td>Sets</td>
-		<td>
-			<input type="checkbox" name="sets" id="sets-base" checked="checked" disabled="disabled">
-			<label for="sets-base"> Base set</label><br>
-			<input type="checkbox" name="sets" id="sets-promo">
-			<label for="sets-promo"> Promo cards</label><br>
-			<input type="checkbox" name="sets" id="sets-breakin-atmo">
-			<label for="sets-breakin-atmo"> Breakin' Atmo</label><br>
-			<input type="checkbox" name="sets" id="sets-pirates-and-bounty-hunters">
-			<label for="sets-pirates-and-bounty-hunters">Pirates &amp; Bounty Hunters</label><br>
-			<input type="checkbox" name="sets" id="sets-blue-sun">
-			<label for="sets-blue-sun">Blue Sun</label><br>
-		</td>
-	</tr>
-</table>
+<script src="firefly.js"></script>
 </body>
 </html>
